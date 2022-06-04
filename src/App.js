@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Navbar';
+import {  BrowserRouter as Router,Routes , Route } from 'react-router-dom';
+import Course from './Course';
+import CourseDetails from './CourseDetails';
+import NotFound from './NotFound';
+import DashBoard from './DashBoard';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Count from './Count';
+import DropCourse from './DropCourse';
+import Course2 from './Course2';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      
+        <Routes>
+
+        <Route path="/" element={<Count />}>
+
+        </Route>
+        <Route path="/Course2" element={<Course2 />}>
+          </Route>
+          <Route path="/Course" element={<Course />}>
+          </Route>
+            
+            <Route path="/blogs/:id" element={<CourseDetails />}>
+            </Route>
+            <Route path="*" element={<NotFound />}>
+        </Route>
+
+        </Routes>
     </div>
   );
 }

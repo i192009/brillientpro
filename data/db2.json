@@ -1,0 +1,25 @@
+{
+    "blogs": [
+      {
+        "Course_Name": "Data Structures",
+        "Course_Code": "CS-200",
+        "instructor": "Adnan Tariq",
+        "id": 1
+      },
+      {
+        "Course_Name": "Data base",
+        "Course_Code": "CS-209",
+        "instructor": "Ali Raza ",
+        "id": 2
+         
+        },
+        {
+          "Course_Name": "Operation System",
+          "Course_Code": "CS-220",
+          "instructor": "Sidra Khalid",
+          "id": 3
+           
+          }
+  
+    ]
+  }
